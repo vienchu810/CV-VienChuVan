@@ -1,0 +1,111 @@
+.animated-input::placeholder {
+  color: #000;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-input {
+  animation: fade-in 0.5s forwards;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+.cover-photo {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  height: 450px; 
+  overflow: hidden;
+}
+
+.cover-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cover-photo .profile-name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-div{
+    background: #fff; border-radius: 10px; height: auto
+}
+
+.activi-tus{
+    color: #818181; font-size: 13px
+}
+.btn-activity{
+    border: none; background: white; width: 30%
+}
+.form-div-left{
+       animation-name: moveInleft;
+    animation-duration: 3s;
+}
+
+.form-div-right{
+       animation-name: moveInRight;
+    animation-duration: 3s;
+}
+.form-div-top{
+       animation-name: moveInTop;
+    animation-duration: 3s;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
